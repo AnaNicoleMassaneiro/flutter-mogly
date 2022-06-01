@@ -1,0 +1,4 @@
+#Wed Jun 01 10:59:51 BRT 2022
+base.0=/Users/ananicole/Documents/mogli/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
