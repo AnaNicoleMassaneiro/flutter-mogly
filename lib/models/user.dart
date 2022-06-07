@@ -1,3 +1,5 @@
+import 'package:mobx/mobx.dart';
+
 class User {
   final String name;
   final String username;

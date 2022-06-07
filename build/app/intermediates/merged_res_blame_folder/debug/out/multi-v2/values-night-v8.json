@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ananicole/Documents/mogli/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/ananicole/Documents/flutter-mogly/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/ananicole/Documents/mogli/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/ananicole/Documents/flutter-mogly/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

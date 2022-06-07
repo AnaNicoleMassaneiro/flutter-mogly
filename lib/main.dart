@@ -1,6 +1,7 @@
 import 'package:mogli/models/user.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:mobx/mobx.dart';
 
 void main() => runApp(
     MaterialApp(
@@ -16,7 +17,7 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage>  {
 
   List<User> _users = [
     User('Elliana Palacios', '@elliana', 'https://images.unsplash.com/photo-1504735217152-b768bcab5ebc?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=0ec8291c3fd2f774a365c8651210a18b', false),
@@ -87,14 +88,14 @@ class _HomePageState extends State<HomePage> {
                 actionExtentRatio: 0.25,
                 child: userComponent(user: _foundedUsers[index]),
                 actions: <Widget>[
-                  new IconSlideAction(
+                  IconSlideAction(
                     caption: 'Archive',
                     color: Colors.transparent,
                     icon: Icons.archive,
 
                     onTap: () => print("archive"),
                   ),
-                  new IconSlideAction(
+                  IconSlideAction(
                     caption: 'Share',
                     color: Colors.transparent,
                     icon: Icons.share,
@@ -102,13 +103,13 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
                 secondaryActions: <Widget>[
-                  new IconSlideAction(
+                  IconSlideAction(
                     caption: 'More',
                     color: Colors.transparent,
                     icon: Icons.more_horiz,
                     onTap: () => print('More'),
                   ),
-                  new IconSlideAction(
+                  IconSlideAction(
                     caption: 'Delete',
                     color: Colors.transparent,
                     icon: Icons.delete,
